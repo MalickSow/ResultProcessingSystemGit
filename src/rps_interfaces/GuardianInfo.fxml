@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1054.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps_interfaces.GuardianInfoController">
+   <children>
+      <Pane onMouseClicked="#GuardianInfoAction" prefHeight="678.0" prefWidth="1057.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="studentid" layoutX="67.0" layoutY="72.0" prefHeight="25.0" prefWidth="157.0" promptText="Student ID" />
+            <Label layoutX="54.0" layoutY="14.0" prefHeight="49.0" prefWidth="170.0" text="Students Grades" textFill="#3e98e4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="249.0" layoutY="72.0" onMouseClicked="#GuardianInfoAction" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: #3E98E4;" text="Done" />
+            <JFXTextArea fx:id="guardianname" editable="false" layoutX="74.0" layoutY="158.0" prefHeight="25.0" prefWidth="131.0" promptText="Guardian Name" />
+            <JFXTextArea fx:id="phone" editable="false" layoutX="74.0" layoutY="247.0" prefHeight="25.0" prefWidth="131.0" promptText="Phone Number" />
+            <JFXTextArea fx:id="office" editable="false" layoutX="74.0" layoutY="349.0" prefHeight="35.0" prefWidth="131.0" promptText="Ofiice" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

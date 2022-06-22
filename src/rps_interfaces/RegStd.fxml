@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps_interfaces.RegStdController">
+   <children>
+      <Pane prefHeight="627.0" prefWidth="753.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="ID" layoutX="151.0" layoutY="109.0" prefHeight="25.0" prefWidth="138.0" promptText="Student ID" />
+            <JFXTextField fx:id="Name" layoutX="153.0" layoutY="176.0" promptText="Name" />
+            <JFXTextField fx:id="Phone" layoutX="153.0" layoutY="243.0" promptText="Phone" />
+            <JFXTextField fx:id="Address" layoutX="154.0" layoutY="311.0" promptText="Address" />
+            <JFXTextField fx:id="Guardian_ID" layoutX="465.0" layoutY="109.0" prefHeight="25.0" prefWidth="138.0" promptText="Guardian ID" />
+            <JFXTextField fx:id="Country" layoutX="465.0" layoutY="176.0" prefHeight="25.0" prefWidth="138.0" promptText="Country" />
+            <JFXTextField layoutX="465.0" layoutY="311.0" prefHeight="25.0" prefWidth="135.0" />
+            <JFXButton layoutX="514.0" layoutY="385.0" onMouseClicked="#SaveAction" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: #3E98E4;" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="136.0" layoutY="20.0" prefHeight="33.0" prefWidth="161.0" text="Student Details" textFill="#3e98e4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="combobox" layoutX="465.0" layoutY="256.0" prefHeight="25.0" prefWidth="135.0" promptText="Department" />
+            <Line endX="623.0" layoutX="130.0" layoutY="80.0" startX="-35.0" stroke="#008cff" strokeWidth="2.0" />
+            <JFXButton layoutX="123.0" layoutY="385.0" onMouseClicked="#ResetAllAction" prefHeight="33.0" prefWidth="62.0" stylesheets="@../CSS/ButtonStyle.css" text="Reset All" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

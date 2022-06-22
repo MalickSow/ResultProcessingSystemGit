@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps_interfaces.RegGuardianController">
+   <children>
+      <Pane prefHeight="637.0" prefWidth="778.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="ID" layoutX="147.0" layoutY="143.0" prefHeight="25.0" prefWidth="138.0" promptText="Guardian ID" />
+            <JFXTextField fx:id="Name" layoutX="149.0" layoutY="231.0" promptText="Name" />
+            <JFXTextField fx:id="Phone" layoutX="149.0" layoutY="312.0" promptText="Phone" />
+            <JFXTextField fx:id="Office" layoutX="149.0" layoutY="398.0" promptText="Office" />
+            <JFXButton layoutX="531.0" layoutY="475.0" onMouseClicked="#SaveAction" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: #3E98E4;" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="29.0" layoutY="24.0" prefHeight="33.0" prefWidth="161.0" text="Guardian Details" textFill="#3e98e4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="645.0" layoutX="130.0" layoutY="80.0" startX="-130.0" stroke="#008cff" strokeWidth="2.0" />
+            <JFXButton layoutX="87.0" layoutY="482.0" onMouseClicked="#ResetAllAction" prefHeight="33.0" prefWidth="62.0" stylesheets="@../CSS/ButtonStyle.css" text="Reset All" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

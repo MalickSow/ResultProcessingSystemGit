@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps_interfaces.RegCourseController">
+   <children>
+      <Pane prefHeight="518.0" prefWidth="597.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="104.0" layoutY="26.0" prefHeight="33.0" prefWidth="161.0" text="Course Details" textFill="#3e98e4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="CourseID" layoutX="115.0" layoutY="138.0" prefHeight="25.0" prefWidth="138.0" promptText="Course ID" />
+            <JFXTextField fx:id="CourseName" layoutX="115.0" layoutY="215.0" prefHeight="25.0" prefWidth="138.0" promptText="Course Name" />
+            <JFXTextField fx:id="Credit" layoutX="115.0" layoutY="302.0" prefHeight="25.0" prefWidth="138.0" promptText="Credit" />
+            <JFXTextField fx:id="CourseTeacher" layoutX="115.0" layoutY="385.0" prefHeight="25.0" prefWidth="138.0" promptText="Course Teacher(ID)" />
+            <JFXButton layoutX="324.0" layoutY="437.0" onMouseClicked="#SaveAction" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: #3E98E4;" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Line endX="776.0" endY="6.0" layoutX="-185.0" layoutY="76.0" startX="270.0" startY="6.0" stroke="#008cff" strokeWidth="2.0" />
+            <JFXButton layoutX="84.0" layoutY="440.0" onMouseClicked="#ResetAllAction" prefHeight="33.0" prefWidth="62.0" stylesheets="@../CSS/ButtonStyle.css" text="Reset All" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

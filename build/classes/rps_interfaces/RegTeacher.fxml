@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps_interfaces.RegTeacherController">
+   <children>
+      <Pane prefHeight="573.0" prefWidth="771.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="72.0" layoutY="30.0" prefHeight="33.0" prefWidth="161.0" text="Teacher Details" textFill="#3e98e4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="TeacherID" layoutX="142.0" layoutY="139.0" prefHeight="25.0" prefWidth="138.0" promptText="Teacher ID" />
+            <JFXTextField fx:id="TeacherName" layoutX="142.0" layoutY="216.0" prefHeight="25.0" prefWidth="138.0" promptText="Name" />
+            <JFXTextField fx:id="Username" layoutX="142.0" layoutY="303.0" prefHeight="25.0" prefWidth="138.0" promptText="Username" />
+            <JFXTextField fx:id="Password" layoutX="142.0" layoutY="386.0" prefHeight="25.0" prefWidth="138.0" promptText="Password" />
+            <JFXButton layoutX="369.0" layoutY="438.0" onMouseClicked="#SaveAction" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: #3E98E4;" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Line endX="683.0" layoutX="-60.0" layoutY="81.0" startX="131.0" stroke="#008cff" strokeWidth="2.0" />
+            <JFXButton layoutX="104.0" layoutY="442.0" onMouseClicked="#ResetAllAction" prefHeight="33.0" prefWidth="62.0" stylesheets="@../CSS/ButtonStyle.css" text="Reset All" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

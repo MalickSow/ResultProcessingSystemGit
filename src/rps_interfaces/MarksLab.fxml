@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps_interfaces.MarksLabController">
+   <children>
+      <Pane prefHeight="637.0" prefWidth="711.0" style="-fx-background-color: white;" stylesheets="@../CSS/TableStyle.css">
+         <children>
+            <JFXComboBox layoutX="53.0" layoutY="44.0" prefHeight="25.0" prefWidth="167.0" promptText="Select Course" />
+            <JFXButton layoutX="256.0" layoutY="50.0" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #3E98E4;" text="Ok">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <TableView layoutX="28.0" layoutY="97.0" prefHeight="520.0" prefWidth="457.0" style="-fx-background-color: white;">
+              <columns>
+                <TableColumn prefWidth="134.0" text="Student ID" />
+                <TableColumn prefWidth="150.0" text="Attendance" />
+                  <TableColumn prefWidth="171.0" text="Total Marks" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</HBox>

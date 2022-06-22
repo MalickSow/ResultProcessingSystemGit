@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1064.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps_interfaces.MarksTheoryController">
+   <children>
+      <Pane prefHeight="637.0" prefWidth="1044.0" stylesheets="@../CSS/TableStyle.css">
+         <children>
+            <JFXComboBox fx:id="CourseComboBox" layoutX="53.0" layoutY="44.0" prefHeight="25.0" prefWidth="167.0" promptText="Select Course" />
+            <JFXButton layoutX="256.0" layoutY="50.0" onMouseClicked="#SelectStudentAction" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #3E98E4;" text="Ok">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="MarksTable" layoutX="17.0" layoutY="96.0" prefHeight="527.0" prefWidth="969.0" style="-fx-background-color: white;">
+              <columns>
+                <TableColumn fx:id="C_SID" prefWidth="161.0" text="SID" />
+                <TableColumn fx:id="col_attendance" onEditCommit="#editcell" prefWidth="126.0" text="attendance" />
+                  <TableColumn fx:id="col_quiz1" onEditCommit="#editcell" prefWidth="128.0" text="Quiz1" />
+                  <TableColumn fx:id="col_quiz2" onEditCommit="#editcell" prefWidth="109.0" text="Quiz2" />
+                  <TableColumn fx:id="col_quiz3" onEditCommit="#editcell" prefWidth="124.0" text="Quiz3" />
+                  <TableColumn fx:id="col_quiz4" onEditCommit="#editcell" prefWidth="120.0" text="Quiz4" />
+                  <TableColumn fx:id="col_mid" onEditCommit="#editcell" prefWidth="100.0" text="Mid" />
+                  <TableColumn fx:id="col_final" onEditCommit="#editcell" prefWidth="100.0" text="Final" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</HBox>

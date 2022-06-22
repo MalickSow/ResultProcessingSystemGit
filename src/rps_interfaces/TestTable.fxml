@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rps_interfaces.TestTableController">
+   <children>
+      <TableView fx:id="table" prefHeight="627.0" prefWidth="771.0">
+        <columns>
+          <TableColumn fx:id="studentid" prefWidth="166.0" text="studentid" />
+          <TableColumn fx:id="atd" prefWidth="138.0" text="atd" />
+        </columns>
+      </TableView>
+   </children>
+</HBox>

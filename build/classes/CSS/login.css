@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+-fx-background-color: red;
+
+}
+.pop{
+    -fx-background-color: white;
+}
+.jfx-text-field, .jfx-password-field {
+
+    -fx-text-inner-color: black;
+}
